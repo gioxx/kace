@@ -1,4 +1,4 @@
-# ADOU
+# ADOU (Active Directory Organizational Unit)
 
 🇮🇹 [Readme also available in italian](README.md).
 
