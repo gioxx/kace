@@ -25,13 +25,13 @@ The script is intended for Kace but can also be used without a K1000 behind it. 
 
 ### The Script
 
-1. Edit [the script](ADOU.ps1) **line 10** entering the IP address to which to ping (to verify that the PC is connected to the corporate network either directly or via VPN). Only if this responds positively then continue with the remaining operations.
+1. Edit [the script](ADOU.ps1) **line 23** entering the IP address to which to ping (to verify that the PC is connected to the corporate network either directly or via VPN). Only if this responds positively then continue with the remaining operations.
 
 ```powershell
 $corporateIP = "10.0.0.1"
 ```
 
-2. Edit [the script](ADOU.ps1) **line 11** to specify a different save folder for the `ADOU.txt` file.
+2. Edit [the script](ADOU.ps1) **line 24** to specify a different save folder for the `ADOU.txt` file.
 
 ```powershell
 $ADOUFolder = "C:\SWSetup"
@@ -63,7 +63,7 @@ $ADOUFolder = "C:\SWSetup"
 
 **Save** your brand new script.
 
-### La Custom Inventory Rule (The Custom Inventory Rule)
+### The Custom Inventory Rule
 
 1. In the K100 Dashboard go to **Inventory** / **Software** section and create a new Software entry (Choose Action / New)
    

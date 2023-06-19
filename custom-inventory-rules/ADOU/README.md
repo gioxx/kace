@@ -25,13 +25,13 @@ Lo script è stato pensato per Kace ma può essere utilizzato anche senza un K10
 
 ### Lo script
 
-1. Modifica [lo script](ADOU.ps1) alla **linea 10** inserendo l'indirizzo IP verso il quale far effettuare il ping (per verificare che il PC sia connesso alla rete aziendale in maniera diretta o via VPN). Solo se questo risponderà positivamente allora proseguirà con il resto delle operazioni.
+1. Modifica [lo script](ADOU.ps1) alla **linea 23** inserendo l'indirizzo IP verso il quale far effettuare il ping (per verificare che il PC sia connesso alla rete aziendale in maniera diretta o via VPN). Solo se questo risponderà positivamente allora proseguirà con il resto delle operazioni.
 
 ```powershell
 $corporateIP = "10.0.0.1"
 ```
 
-2. Modifica [lo script](ADOU.ps1) alla **linea 11** per specificare una diversa cartella di salvataggio del file `ADOU.txt`.
+2. Modifica [lo script](ADOU.ps1) alla **linea 24** per specificare una diversa cartella di salvataggio del file `ADOU.txt`.
 
 ```powershell
 $ADOUFolder = "C:\SWSetup"

@@ -1,13 +1,24 @@
 <#
-    New-ADOU (PS1)
-        Verifica la posizione del PC in Active Directory e la manda in output (a video e nel file $ADOUFolder\ADOU.txt)
-        Checks the location of the PC in Active Directory and outputs it (on the screen and in the file $ADOUFolder\ADOU.txt)
-    GSolone, 2023
-    Credits:
-        OpenAI / ChatGPT! :-)
-    Modifiche:
-        13/6/23: Prima versione dello script (First version of the script).
-#>
+.SYNOPSIS
+    It checks the location of the PC in Active Directory and outputs it (on the screen and in the file $ADOUFolder\ADOU.txt).
+   
+.DESCRIPTION
+    It checks the location of the PC in Active Directory and outputs it (on the screen and in the file $ADOUFolder\ADOU.txt).
+    The script works only if the user is connected to the corporate network (in the office or via VPN). The produced file - $ADOUFolder\ADOU.txt - is then read by K1000, shown to anyone accessing the PC details in inventory.
+
+.NOTES
+    Filename: ADOU.ps1
+    Version: 0.1 (2023)
+    Author: GSolone
+    Blog: gioxx.org
+    Twitter: @gioxx
+
+    Changes:
+        13/6/23- First version of the script.
+
+.LINK
+    -    
+#> 
 
 $corporateIP = "10.0.0.1"
 $ADOUFolder = "C:\SWSetup"
