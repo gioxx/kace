@@ -19,7 +19,7 @@
 .LINK
     https://learn.microsoft.com/en-us/answers/questions/1103769/detect-if-logged-into-windows-hello-for-business-i
     https://learn.microsoft.com/en-us/powershell/module/microsoft.powershell.management/get-itemproperty?view=powershell-7.3
-    https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-switch?view=powershell-7.3    
+    https://learn.microsoft.com/en-us/powershell/scripting/learn/deep-dives/everything-about-switch?view=powershell-7.3
 #>
 
 $HelloUnlockFolder = "C:\SWSetup"
