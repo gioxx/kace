@@ -15,4 +15,5 @@ Tested: Windows 11 (All), Windows 10 (All), Windows 7 (All)
 Not tested: Windows 8 (All), Windows XP (All)
 
 **Script**:  
-Execute as logged-in user.
+Execute as Local System. 
+Execute Every 2 hours (or as you wish).
