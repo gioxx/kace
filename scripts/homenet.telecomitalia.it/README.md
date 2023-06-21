@@ -23,7 +23,7 @@ Execute Every 2 hours (or as you wish).
 * **Enabled**: `Yes`
 * **Deploy**: one or some devices / **All devices** / Device Label
 * **Windows Run As**: `Local System`
-* Upload `Homenet-TelecomItalia-Suffix.ps1` into **Dependencies ** (`New Dependency ...`)
+* **Upload** `Homenet-TelecomItalia-Suffix.ps1` into **Dependencies** (`New Dependency ...`)
 
 #### Tasks
 
