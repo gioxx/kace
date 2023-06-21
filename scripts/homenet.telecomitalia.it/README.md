@@ -14,6 +14,24 @@ Vedi articolo sul blog: https://go.gioxx.org/c1jf7
 Tested: Windows 11 (All), Windows 10 (All), Windows 7 (All)  
 Not tested: Windows 8 (All), Windows XP (All)
 
-**Script**:  
-Execute as Local System.  
+**Scheduled task**:  
 Execute Every 2 hours (or as you wish).
+
+#### Script settings
+
+* **Type**: `Online KScript`
+* **Enabled**: `Yes`
+* **Deploy**: one or some devices / **All devices** / Device Label
+* **Windows Run As**: `Local System`
+* Upload `Homenet-TelecomItalia-Suffix.ps1` into **Dependencies ** (`New Dependency ...`)
+
+#### Tasks
+
+* **Verify**: `Launch a program...`
+  * **Directory**: `$(KACE_SYS_DIR)\WindowsPowerShell\v1.0`
+  * **File**: `powershell.exe`
+  * **Wait for completion**: `Yes`
+  * **Visible**: `No`
+  * **Parameters**: `-executionpolicy remotesigned -File $(KACE_DEPENDENCY_DIR)\Homenet-TelecomItalia-Suffix.ps1`
+
+**Save** .
