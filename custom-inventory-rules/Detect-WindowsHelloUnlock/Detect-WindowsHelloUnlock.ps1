@@ -8,12 +8,13 @@
 
 .NOTES
     Filename: Detect-WindowsHelloUnlock.ps1
-    Version: 0.1
+    Version: 0.2
     Author: GSolone
     Blog: gioxx.org
     Twitter: @gioxx
 
     Changes:
+        23/6/23- Check the existence of the folder where to write the file and - if it does not exist - create it.
         23/5/23- First version of the script.
 
 .LINK
@@ -23,6 +24,7 @@
 #>
 
 $HelloUnlockFolder = "C:\SWSetup"
+if (!(Test-Path $HelloUnlockFolder)) { New-Item -ItemType Directory -Path $HelloUnlockFolder | Out-Null }
 
 $LogonUI = Get-ItemProperty -Path "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Authentication\LogonUI"
 if ( $LogonUI ) {
